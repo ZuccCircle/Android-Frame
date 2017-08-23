@@ -1,4 +1,4 @@
-package com.zucc.circle.circleapp.Business.Module3.holder;
+package com.zucc.circle.circleapp.Business.Module2.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -15,8 +15,8 @@ import butterknife.ButterKnife;
 
 public class TestHolder extends RecyclerView.ViewHolder{
     @BindView(R.id.tv_title)
-    public TextView tvTitle;
-    public TestHolder(View itemView) {
+    protected TextView tvTitle;
+    protected TestHolder(View itemView) {
         super(itemView);
         ButterKnife.bind(this, itemView);
     }

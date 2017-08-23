@@ -1,4 +1,4 @@
-package com.zucc.circle.circleapp.Business.Module3.adapter;
+package com.zucc.circle.circleapp.Business.Module1.adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -6,7 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.zucc.circle.circleapp.Business.Module3.model.TestBean;
+import com.zucc.circle.circleapp.Business.Module1.model.TestBean;
 import com.zucc.circle.circleapp.Common.Base.BaseAdapter;
 import com.zucc.circle.circleapp.R;
 
