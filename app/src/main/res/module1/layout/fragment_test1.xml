@@ -28,11 +28,11 @@
 
         </RelativeLayout>
     </android.support.v7.widget.Toolbar>
-    <com.zucc.circle.circleapp.common.widget.LearnView
-        android:id="@+id/mView"
+    <me.panpf.sketch.SketchImageView
+        android:id="@+id/iv_scale_test"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/toolbar" />
+        android:layout_below="@+id/toolbar"/>
 
 
 </RelativeLayout>

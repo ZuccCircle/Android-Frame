@@ -17,6 +17,7 @@ import com.zucc.circle.circleapp.R;
 import java.util.ArrayList;
 
 import butterknife.BindView;
+import me.panpf.sketch.Sketch;
 
 public class Test3Fragment extends BaseFragment<TestPresenter> implements TestContract.View {
     @BindView(R.id.rv_test)
@@ -38,6 +39,7 @@ public class Test3Fragment extends BaseFragment<TestPresenter> implements TestCo
         }
         testAdapter = new TestAdapter(mContext);
         testAdapter.setDataList(list);
+
         lRecyclerViewAdapter = new LRecyclerViewAdapter(testAdapter);
         rvTest.setAdapter(lRecyclerViewAdapter);
         rvTest.setLayoutManager(new LinearLayoutManager(mContext));
@@ -51,5 +53,11 @@ public class Test3Fragment extends BaseFragment<TestPresenter> implements TestCo
     @Override
     public void showList() {
         //View层更新/显示数据
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mPresenter.unSubscribe();
     }
 }

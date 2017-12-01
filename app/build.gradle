@@ -55,6 +55,10 @@ dependencies {
     compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
     compile 'com.github.barteksc:android-pdf-viewer:2.7.0'
     compile 'fm.jiecao:jiecaovideoplayer:5.8.1'
+
+    //图片加载
+    compile 'me.panpf:sketch:2.6.0'
+
     //网络请求
     compile 'com.lzy.net:okgo:+'
     compile 'com.lzy.net:okrx2:+'
